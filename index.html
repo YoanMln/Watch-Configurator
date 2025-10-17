@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Configurator</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="watch-container">
+      <div class="strap" id="strap"></div>
+      <div class="crown" id="crown"></div>
+      <div class="watch" id="watch">
+        <div class="index">
+          <div class="douze">12</div>
+          <div class="trois">3</div>
+          <div class="six">6</div>
+          <div class="neuf">9</div>
+        </div>
+        <div class="hour hand" id="hour"></div>
+        <div class="minute hand" id="minute"></div>
+        <div class="seconds hand" id="seconds"></div>
+      </div>
+    </div>
+    <div class="configurator-container">
+      <div class="configurator">
+        <fieldset>
+          <legend>Personnalisation de la montre</legend>
+
+          <div class="config">
+            <label for="case-color">Boîtier :</label>
+            <input type="color" id="case-color" value="#3b4547" />
+          </div>
+          <div class="config">
+            <label for="crown-color">Couronne :</label>
+            <input type="color" id="crown-color" value="#aab1bc" />
+          </div>
+
+          <div class="config">
+            <label for="bezel-color">Lunette :</label>
+            <div class="colors-container">
+              <input type="color" id="bezel-color" value="#f5f5f5" />
+            </div>
+          </div>
+          <div class="config">
+            <label for="dial-color">Cadran :</label>
+            <input type="color" id="dial-color" value="#f5f5f5" />
+          </div>
+
+          <div class="config">
+            <label for="index-color">Index :</label>
+            <input type="color" id="index-color" value="#141414" />
+          </div>
+
+          <div class="config">
+            <label for="hand-color">Aiguilles :</label>
+            <input type="color" id="hand-color" value="#f5f5f5" />
+          </div>
+
+          <div class="config">
+            <label for="strap-color">Bracelet :</label>
+            <input type="color" id="strap-color" value="#212020" />
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="configurator.js"></script>
+    <script src="hours.js"></script>
+  </body>
+</html>
