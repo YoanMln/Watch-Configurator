@@ -64,6 +64,8 @@ $width-config: 80%;
 
 // LEFT //
 
+$left-strap: 50%;
+$left-strap-before: 60%;
 $left-watch: 50%;
 $left-crown: calc(50% + 6.56em);
 $left-hand: 0;
@@ -79,6 +81,7 @@ $right-strap-after: 60%;
 
 // TOP //
 $top-strap: 50%;
+$top-watch: 50%;
 $top-crown: 50%;
 $top-hour: 3.12em;
 $top-minute: 1.87;
@@ -93,8 +96,8 @@ $top-neuf: 9.5em;
 $margin-hand: auto;
 $margin-top-configurator: 2.5rem;
 $margin-left-configurator: 2rem;
-$margin: 0;
-$margin-bottom: 1rem;
+$margin-fieldset: 0;
+$margin-bottom-legend: 1rem;
 
 // PADDING //
 
@@ -118,3 +121,34 @@ $position-neuf: absolute;
 $position-configurator: relative;
 $position-configurator-before: absolute;
 $position-configurator-after: absolute;
+
+// Z-INDEX //
+$z-index-before: -1;
+$z-index-after: -1;
+
+// FONT //
+$font-size-legend: 1.2rem;
+$font-weight-legend: bold;
+$font-size-label: 18px;
+$font-size-button: 13px;
+$font-weight-button: 500;
+
+// GAP //
+$gap-fieldset: 1.5rem;
+$gap-config: 10px;
+
+// ISOLATION //
+$isolation-isolate: isolate;
+
+// BOX-SHADOW //
+$box-shadow-configurator: 0px 6px 24px rgba(0, 0, 0, 0.2);
+$box-shadow-inset: inset 0 0 19px -8px #ffffff;
+
+// BACKDROP-FILTER //
+$backdrop-filter-blur: blur(6px);
+
+// OVERFLOW //
+$overflow-hidden: hidden;
+
+// INSET //
+$inset-zero: 0;
