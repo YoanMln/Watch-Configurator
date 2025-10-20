@@ -1,0 +1,120 @@
+// BACKGROUND //
+
+$background-body: #999999dd;
+$background-strap: #212020;
+$background-strap-before: #a84545;
+$background-strap-after: #456ba8;
+$background-watch: #f5f5f5;
+$background-hand: #141414;
+$background-second: #a84545;
+$background-config: #2a2a3094;
+
+// COLORS //
+
+$color-index: #141414;
+$black-details: #141414;
+$white-details: #f5f5f5;
+$btn-color: #dcdcdc;
+
+// BORDER //
+$top-bottom-border-strap: none;
+$border-strap: 0.12em solid rgb(0, 0, 0);
+$border-radius: 5px;
+$border-before: 0.12em solid #3b4547;
+$border-after: 0.12em solid #3b4547;
+$border-radius-watch: 50%;
+$border-crown: 0.12em solid #3b4547;
+$radius-hand: 0.31em;
+$radius-configurator: 56px;
+$border-configurator: none;
+$radius-configurator-before: 56px;
+$radius-configurator-after: 56px;
+$border-fieldset: none;
+$border-button: 1px solid black;
+$radius-button: 10px;
+$radius-config: 15px;
+$color-choice-radius: 50%;
+
+// HEIGHT //
+
+$height-strap: 55vh;
+$height-strap-before: 55vh;
+$height-strap-after: 55vh;
+$height-watch: 11.25em;
+$height-crown: 1.25em;
+$height-hour: 2.5em;
+$height-minute: 3.75em;
+$height-minute: 3.75em;
+$height-seconds: 4.37em;
+$height-configurator: 50rem;
+$height-config: 70px;
+
+// WIDTH //
+
+$width-strap: 7.5em;
+$width-strap-before: 1.3em;
+$width-strap-after: 1.3em;
+$width-watch: 11.25em;
+$width-crown: 1.25em;
+$width-hour: 0.31em;
+$width-minute: 0.31em;
+$width-seconds: 0.18em;
+$width-configurator: 50vh;
+$width-config: 80%;
+
+// LEFT //
+
+$left-watch: 50%;
+$left-crown: calc(50% + 6.56em);
+$left-hand: 0;
+$left-douze: 5em;
+$left-trois: 10em;
+$left-six: 0.5em;
+$left-neuf: 5.4em;
+
+// RIGHT //
+
+$right-hand: 0;
+$right-strap-after: 60%;
+
+// TOP //
+$top-strap: 50%;
+$top-crown: 50%;
+$top-hour: 3.12em;
+$top-minute: 1.87;
+$top-seconds: 1.25em;
+$top-douze: 0.5em;
+$top-trois: 5.1em;
+$top-six: 5.1em;
+$top-neuf: 9.5em;
+
+// MARGIN //
+
+$margin-hand: auto;
+$margin-top-configurator: 2.5rem;
+$margin-left-configurator: 2rem;
+$margin: 0;
+$margin-bottom: 1rem;
+
+// PADDING //
+
+$padding-configurator: 1.5rem;
+$padding-fieldset: 0;
+$padding-button: 10px;
+
+// POSITION //
+
+$position-strap: absolute;
+$position-background-strap: -0.31em;
+$position-strap-before: absolute;
+$position-strap-after: absolute;
+$position-watch: absolute;
+$position-crown: absolute;
+$position-hand: absolute;
+$position-douze: absolute;
+$position-trois: absolute;
+$position-six: absolute;
+$position-neuf: absolute;
+$position-configurator: relative;
+$position-configurator-before: absolute;
+$position-configurator-after: absolute;
