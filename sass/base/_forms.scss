@@ -1,0 +1,22 @@
+fieldset {
+  border: $border-fieldset;
+  padding: $padding-fieldset;
+  margin: $margin-fieldset;
+  gap: 1.5rem;
+  @include flex-column;
+  @include align-center;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: $margin-bottom-legend;
+  color: $black-details;
+  text-align: center;
+}
+
+label {
+  color: $white-details;
+  font-size: 18px;
+}
+
