@@ -1,0 +1,45 @@
+.moon-phase {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #2c2c2c;
+  position: relative;
+
+  
+  --moon-offset: -50px;
+}
+
+.moon-phase::before {
+  display: none;
+}
+
+// croissant avec un cercle décalé
+.moon-phase::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: var(--moon-offset);  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f4f6f0;
+  z-index: 1;
+}
+
+.hemisphere {
+  display: none;
+}
+
+.light {
+  background-color: #f4f6f0 !important;
+}
+
+.dark {
+  background-color: #2c2c2c !important;
+}
