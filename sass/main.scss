@@ -1,9 +1,9 @@
-// ABSTRACTS // 
+// ABSTRACTS //
 
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// BASE // 
+// BASE //
 
 @import "base/base";
 @import "base/reset";
@@ -11,16 +11,15 @@
 @import "base/forms";
 @import "base/typography";
 
-// PAGES // 
+// PAGES //
 
 @import "pages/index";
+@import "pages/hands";
 @import "pages/configurator";
 @import "pages/crown";
-@import "pages/hand";
 @import "pages/strap";
 @import "pages/watch";
 
-
-// UTILITIES // 
+// UTILITIES //
 
 @import "utilities/responsive";
