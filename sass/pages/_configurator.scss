@@ -1,0 +1,53 @@
+.configurator-container {
+  @include flex-center;
+  margin-top: $margin-top-configurator;
+  margin-left: $margin-left-configurator;
+}
+
+.configurator {
+  height: $height-configurator;
+  @include flex-column;
+  justify-content: space-around;
+  width: $width-configurator;
+  border-radius: $radius-configurator;
+  padding: $padding-configurator;
+  position: $position-configurator;
+  isolation: $isolation-isolate;
+  box-shadow: $box-shadow-configurator;
+  background: none;
+  border: $border-configurator;
+  overflow: $overflow-hidden;
+}
+
+.configurator::before {
+  content: "";
+  position: $position-configurator-before;
+  inset: 0;
+  z-index: -1;
+  border-radius: $radius-configurator-before;
+  box-shadow: inset 0 0 19px -8px #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.configurator::after {
+  content: "";
+  position: $position-configurator-after;
+  inset: 0;
+  z-index: -1;
+  border-radius: $radius-configurator-after;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  filter: url(#glass-distortion);
+  -webkit-filter: url(#glass-distortion);
+}
+
+.config {
+  width: $width-config;
+  height: $height-config;
+  border-radius: $radius-config;
+  @include flex-column;
+  @include align-center;
+  justify-content: center;
+  gap: $gap-config;
+  background-color: $background-config;
+}
