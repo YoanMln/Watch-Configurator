@@ -152,3 +152,36 @@ $overflow-hidden: hidden;
 
 // INSET //
 $inset-zero: 0;
+
+
+// RESPONSIVE // 
+
+// RESPONSIVE BREAKPOINTS //
+$breakpoint-mobile: 780px;
+
+// MOBILE CONFIGURATOR //
+$height-mobile-configurator: 150px;
+$width-mobile-config: 140px;
+$height-mobile-config: 80px;
+$gap-mobile-configurator: 1em;
+$gap-mobile-config: 0.5px;
+$padding-mobile-configurator: 0 1em;
+$padding-mobile-config: 0.5em;
+$margin-mobile-config: 0 10px;
+$radius-mobile-config: 15px;
+
+// MOBILE COLORS //
+$background-mobile-configurator: #aeb0b0;
+$background-mobile-config: #727780c1;
+$border-mobile-config: 1px solid white;
+
+// MOBILE SHADOWS //
+$box-shadow-mobile: 0 -2px 16px rgba(0, 0, 0, 0.08);
+
+// Z-INDEX //
+$z-index-mobile: 10;
+
+// COLOR CHOICES //
+$width-color-choice: 2.5em;
+$height-color-choice: 2.5em;
+$gap-colors-container: 15px;

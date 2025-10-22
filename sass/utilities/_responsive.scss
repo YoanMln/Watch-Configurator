@@ -1,0 +1,77 @@
+@media screen and (max-width: $breakpoint-mobile) {
+    .configurator-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: $height-mobile-configurator;
+      z-index: $z-index-mobile;
+      background: $background-mobile-configurator;
+      box-shadow: $box-shadow-mobile;
+      @include flex-center;
+      justify-content: flex-start;
+      padding: $padding-mobile-configurator;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-left: 0;
+    }
+  
+    .configurator {
+      @include flex-center;
+      flex-direction: row;
+      gap: $gap-mobile-configurator;
+      height: 100%;
+      width: auto;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      overflow: visible !important;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+  
+    fieldset {
+      @include flex-center;
+      flex-direction: row;
+      gap: $gap-mobile-config;
+      padding: $padding-fieldset;
+      margin: $margin-fieldset;
+      border: none;
+      flex: 0 0 auto;
+    }
+  
+    legend {
+      display: none;
+    }
+  
+    .config {
+      width: $width-mobile-config;
+      height: $height-mobile-config;
+      flex: 0 0 auto;
+      @include flex-column;
+      @include align-center;
+      justify-content: center;
+      background: $background-mobile-config;
+      border-radius: $radius-mobile-config;
+      padding: $padding-mobile-config;
+      margin: $margin-mobile-config;
+    }
+  
+    button {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  }
+  
+  .colors-container {
+    @include flex-center;
+    gap: $gap-colors-container;
+  }
+  
+  .color-choices {
+    width: $width-color-choice;
+    height: $height-color-choice;
+    border-radius: 50%;
+    border: $border-mobile-config;
+    cursor: pointer;
+  }
