@@ -1,0 +1,10 @@
+.crown {
+  position: $position-crown;
+  height: $height-crown;
+  width: $width-crown;
+  background: linear-gradient(#aab1bc 0.31em, #ccc8c9 0.31);
+  border: $border-crown;
+  transform: translate(-50%, -50%);
+  top: $top-crown;
+  left: calc(50% + 6.56em);
+}

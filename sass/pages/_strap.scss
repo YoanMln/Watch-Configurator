@@ -1,0 +1,43 @@
+.strap {
+  height: $height-strap;
+  width: $width-strap;
+  border: $border-strap;
+  border-top: $top-bottom-border-strap;
+  border-bottom: $top-bottom-border-strap;
+  border-radius: $border-radius;
+  position: $position-strap;
+  transform: translate(-50%, -50%); 
+  left: $left-strap;
+  top: $top-strap;
+  background-color: $background-strap;
+  background-size: 1.12em 1.12em;
+  background-position: $position-background-strap;
+  background-image: radial-gradient(
+    #3b4547 2px,
+    transparent 2px
+  ); 
+}
+
+.strap::before {
+  position: $position-strap-before; 
+  content: "";
+  height: $height-strap-before;
+  width: $width-strap-before;
+  background-color: $background-strap-before;
+  border: $border-before; 
+  left: $left-strap-before;
+  border-top: $top-bottom-border-strap;
+  border-bottom: $top-bottom-border-strap;
+}
+
+.strap::after {
+  position: $position-strap;
+  content: "";
+  height: $height-strap-after;
+  width: $width-strap-after;
+  background-color: $background-strap-after;
+  border: $border-after;
+  right: $right-strap-after;
+  border-top: $top-bottom-border-strap; 
+  border-bottom: $top-bottom-border-strap;
+}

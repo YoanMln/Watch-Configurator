@@ -1,0 +1,25 @@
+.hand {
+  @include absolute-center;
+  background-color: $background-hand;
+  border-radius: $radius-hand;
+  transform-origin: bottom;
+}
+
+.hour {
+  height: $height-hour;
+  width: $width-hour;
+  top: $top-hour;
+}
+
+.minute {
+  height: $height-minute;
+  width: $width-minute;
+  top: $top-minute;
+}
+
+.seconds {
+  height: $height-seconds;
+  width: $width-seconds;
+  top: $top-seconds;
+  background-color: $background-second;
+}

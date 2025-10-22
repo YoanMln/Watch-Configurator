@@ -1,0 +1,11 @@
+.watch {
+  height: $height-watch;
+  width: $width-watch;
+  background-color: $background-watch;
+  position: $position-watch;
+  transform: translate(-50%, -50%);
+  left: $left-watch;
+  top: $top-watch;
+  border-radius: $border-radius-watch;
+  box-shadow: 0 0 0 0.12em #3b4547, 0 0 0 0.93em #ccc8c9, 0 0 0 1.06em #3b4547;
+}
