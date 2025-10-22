@@ -1,25 +1,28 @@
 .hand {
-  @include absolute-center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform-origin: 50% 100%;
   background-color: $background-hand;
   border-radius: $radius-hand;
-  transform-origin: bottom;
 }
 
 .hour {
-  height: $height-hour;
-  width: $width-hour;
-  top: $top-hour;
+  height: 2.5em;
+  width: 0.31em;
+  top: 3.12em;
 }
 
 .minute {
-  height: $height-minute;
-  width: $width-minute;
-  top: $top-minute;
+  height: 3.75em;
+  width: 0.31em;
+  top: 1.87em;
 }
 
 .seconds {
-  height: $height-seconds;
-  width: $width-seconds;
-  top: $top-seconds;
+  height: 4.37em;
+  width: 0.18em;
+  top: 1.25em;
   background-color: $background-second;
 }

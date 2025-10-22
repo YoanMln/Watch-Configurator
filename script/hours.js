@@ -12,7 +12,7 @@ const setClock = setInterval(function clock() {
   let calcMin = min * 6;
   let calcSec = sec * 6;
 
-  hour.style.transform = `rotate(${calcHr}deg)`;
-  minute.style.transform = `rotate(${calcMin}deg)`;
-  seconds.style.transform = `rotate(${calcSec}deg)`;
+  hour.style.transform = `translateX(-50%) rotate(${calcHr}deg)`;
+  minute.style.transform = `translateX(-50%) rotate(${calcMin}deg)`;
+  seconds.style.transform = `translateX(-50%) rotate(${calcSec}deg)`;
 }, 1000);
