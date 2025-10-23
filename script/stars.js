@@ -1,5 +1,5 @@
 function createStars() {
-  const starsContainer = document.getElementById("watch");
+  const starsContainer = document.getElementById("stars");
   const numberOfStars = 15;
   const minDistance = 10; 
   const positions = [];

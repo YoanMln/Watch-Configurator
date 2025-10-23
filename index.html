@@ -18,7 +18,7 @@
           <div class="neuf">9</div>
         </div>
         <div class="moon-phase">
-          <div class="hemisphere"></div>
+          <div class="hemisphere" id="stars"></div>
           <div class="hemisphere"></div>
         </div>
         <div class="hour hand" id="hour"></div>
@@ -30,7 +30,9 @@
       <div class="configurator">
         <fieldset>
           <legend>Personnalisation de la montre</legend>
-
+          <div class="config">
+            <button class="random-btn" id="random-button">Couleurs aléatoires</button>
+          </div>
           <div class="config">
             <label for="case-color">Boîtier :</label>
             <input type="color" id="case-color" value="#3b4547" />
