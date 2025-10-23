@@ -10,12 +10,7 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 
-# Sass Cache
-.sass-cache/
-*.css.map
 
-# CSS compilé (généré automatiquement depuis SCSS)
-assets/css/style.css
 
 # Logs
 logs
