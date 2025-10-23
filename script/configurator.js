@@ -9,52 +9,133 @@ function updateBoxShadow() {
 }
 
 // CASE //
-document.getElementById("case-color").addEventListener("input", (e) => {
-  caseColor = e.target.value;
-  joinColor = e.target.value;
-  updateBoxShadow();
+document.getElementById("case-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#case-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    const color = e.target.dataset.color;
+    caseColor = color;
+    joinColor = color;
+    updateBoxShadow();
+  }
 });
 
 // CROWN
+document.getElementById("crown-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#crown-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
 
-document.getElementById("crown-color").addEventListener("input", (e) => {
-  document.getElementById("crown").style.background = e.target.value;
+    e.target.classList.add("active");
+
+    document.getElementById("crown").style.background = e.target.dataset.color;
+  }
 });
 
 // BEZEL //
 
-document.getElementById("bezel-color").addEventListener("input", (e) => {
-  bezelColor = e.target.value;
-  updateBoxShadow();
+document.getElementById("bezel-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#bezel-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    bezelColor = e.target.dataset.color;
+    updateBoxShadow();
+  }
 });
 
 // DIAL //
 
-document.getElementById("dial-color").addEventListener("input", (e) => {
-  document.getElementById("watch").style.backgroundColor = e.target.value;
+document.getElementById("dial-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#dial-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    document.getElementById("watch").style.backgroundColor =
+      e.target.dataset.color;
+  }
 });
 
 // INDEX //
 
-document.getElementById("index-color").addEventListener("input", (e) => {
-  document.querySelectorAll(".douze, .trois, .six, .neuf").forEach((el) => {
-    el.style.color = e.target.value;
-  });
+document.getElementById("index-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#index-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    document.querySelectorAll(".douze, .trois, .six, .neuf").forEach((el) => {
+      el.style.color = e.target.dataset.color;
+    });
+  }
 });
 
 // HAND //
 
-document.getElementById("hand-color").addEventListener("input", (e) => {
-  document.querySelectorAll(".hour, .minute").forEach((hand) => {
-    hand.style.backgroundColor = e.target.value;
-  });
+document.getElementById("hand-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#hand-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    document.querySelectorAll(".hour, .minute").forEach((hand) => {
+      hand.style.setProperty(
+        "background-color",
+        e.target.dataset.color,
+        "important"
+      );
+    });
+  }
 });
 
 // STRAP //
 
-document.getElementById("strap-color").addEventListener("input", (e) => {
-  document.getElementById("strap").style.backgroundColor = e.target.value;
+document.getElementById("strap-colors").addEventListener("click", (e) => {
+  if (e.target.classList.contains("color-btn")) {
+    document
+      .querySelectorAll("#strap-colors .color-btn")
+      .forEach((btn) => btn.classList.remove("active"));
+
+    e.target.classList.add("active");
+
+    document.getElementById("strap").style.backgroundColor =
+      e.target.dataset.color;
+  }
 });
+
+// STRAP DETAILS //
+
+document
+  .getElementById("strap-details-colors")
+  .addEventListener("click", (e) => {
+    if (e.target.classList.contains("color-btn")) {
+      document
+        .querySelectorAll("#strap-details-colors .color-btn")
+        .forEach((btn) => btn.classList.remove("active"));
+
+      e.target.classList.add("active");
+
+      const color = e.target.dataset.color;
+
+      document.documentElement.style.setProperty("--strap-before-color", color);
+      document.documentElement.style.setProperty("--strap-after-color", color);
+    }
+  });
 
 /////////////////////-RANDOM-COLOR-//////////////////////////////////////
 
@@ -75,6 +156,7 @@ function randomizeAllColors() {
   const randomIndexColor = generateRandomColor();
   const randomHandColor = generateRandomColor();
   const randomStrapColor = generateRandomColor();
+  const randomStrapDetailsColor = generateRandomColor();
 
   caseColor = randomCaseColor;
   joinColor = randomCaseColor;
@@ -90,6 +172,15 @@ function randomizeAllColors() {
     hand.style.backgroundColor = randomHandColor;
   });
   document.getElementById("strap").style.backgroundColor = randomStrapColor;
+
+  document.documentElement.style.setProperty(
+    "--strap-before-color",
+    randomStrapDetailsColor
+  );
+  document.documentElement.style.setProperty(
+    "--strap-after-color",
+    randomStrapDetailsColor
+  );
 }
 
 document

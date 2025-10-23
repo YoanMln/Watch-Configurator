@@ -1,0 +1,38 @@
+.color-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 1px;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.1);
+    border-color: #666;
+  }
+
+  &.active {
+    border-color: #000;
+    transform: scale(1.2);
+
+    &::after {
+      content: "✓";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+    }
+  }
+}
