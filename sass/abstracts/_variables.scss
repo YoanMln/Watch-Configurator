@@ -2,8 +2,8 @@
 
 $background-body: #999999dd;
 $background-strap: #212020;
-$background-strap-before: #a84545;
-$background-strap-after: #456ba8;
+$background-strap-before: #c0c0c0;
+$background-strap-after: #c0c0c0;
 $background-watch: rgb(70, 70, 70);
 $background-hand: #efefef;
 $background-second: #a84545;
@@ -46,8 +46,8 @@ $height-hour: 2.5em;
 $height-minute: 3.75em;
 $height-minute: 3.75em;
 $height-seconds: 4.37em;
-$height-configurator: 50rem;
-$height-config: 70px;
+$height-configurator: 60rem;
+$height-config: 75px;
 
 // WIDTH //
 
@@ -60,7 +60,7 @@ $width-hour: 0.31em;
 $width-minute: 0.31em;
 $width-seconds: 0.18em;
 $width-configurator: 50vh;
-$width-config: 80%;
+$width-config: 70%;
 
 // LEFT //
 
@@ -94,7 +94,8 @@ $top-neuf: 9.5em;
 // MARGIN //
 
 $margin-hand: auto;
-$margin-top-configurator: 2.5rem;
+$margin-top-configurator: 1rem;
+$margin-bottom-configurator: 1rem;
 $margin-left-configurator: 2rem;
 $margin-fieldset: 0;
 $margin-bottom-legend: 1rem;
@@ -160,14 +161,17 @@ $breakpoint-mobile: 780px;
 
 // MOBILE CONFIGURATOR //
 $height-mobile-configurator: 150px;
-$width-mobile-config: 140px;
-$height-mobile-config: 80px;
+$width-mobile-config: 230px;
+$height-mobile-config: 85px;
 $gap-mobile-configurator: 1em;
 $gap-mobile-config: 0.5px;
 $padding-mobile-configurator: 0 1em;
 $padding-mobile-config: 0.5em;
 $margin-mobile-config: 0 10px;
 $radius-mobile-config: 15px;
+
+$width-mobile-btn-config: 40px;
+$height-mobile-btn-config: 40px;
 
 // MOBILE COLORS //
 $background-mobile-configurator: #aeb0b0;

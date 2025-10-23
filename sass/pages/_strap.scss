@@ -28,7 +28,9 @@
   left: $left-strap-before;
   border-top: $top-bottom-border-strap;
   border-bottom: $top-bottom-border-strap;
+  background-color: var(--strap-before-color, $background-strap-before);
 }
+
 
 .strap::after {
   position: $position-strap;
@@ -40,4 +42,5 @@
   right: $right-strap-after;
   border-top: $top-bottom-border-strap; 
   border-bottom: $top-bottom-border-strap;
+  background-color: var(--strap-after-color, $background-strap-after);
 }

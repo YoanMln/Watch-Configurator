@@ -1,6 +1,7 @@
 .configurator-container {
   @include flex-center;
   margin-top: $margin-top-configurator;
+  margin-bottom: $margin-bottom-configurator;
   margin-left: $margin-left-configurator;
 }
 
