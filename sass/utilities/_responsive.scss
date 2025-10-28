@@ -85,3 +85,15 @@
   border: $border-mobile-config;
   cursor: pointer;
 }
+
+.strap {
+  height: $height-mobile-strap;
+}
+
+.strap::before {
+  height: $height-mobile-strap-before;
+}
+
+.strap::after {
+    height: $height-mobile-strap-after;
+}

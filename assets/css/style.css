@@ -443,4 +443,16 @@ label {
   cursor: pointer;
 }
 
+.strap {
+  height: 40vh;
+}
+
+.strap::before {
+  height: 40vh;
+}
+
+.strap::after {
+  height: 40vh;
+}
+
 /*# sourceMappingURL=style.css.map */
