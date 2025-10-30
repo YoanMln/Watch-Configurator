@@ -455,13 +455,4 @@ label {
   height: 40vh;
 }
 
-.watch-container {
-  height: calc(100vh - 150px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -5vh;
-}
-
 /*# sourceMappingURL=style.css.map */
