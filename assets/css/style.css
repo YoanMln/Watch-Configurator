@@ -60,7 +60,7 @@ label {
 
 .trois {
   position: absolute;
-  left: 10em;
+  left: 10.5em;
   top: 5.1em;
   color: #efefef;
 }
@@ -74,7 +74,7 @@ label {
 
 .neuf {
   position: absolute;
-  top: 9.5em;
+  top: 10em;
   left: 5.4em;
   color: #efefef;
 }
@@ -235,7 +235,7 @@ label {
 .moon-phase {
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 72%;
   transform: translate(-50%, -50%);
   border-radius: 100%;
   border: 1px solid #ccc;
@@ -356,6 +356,15 @@ label {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   font-size: 14px;
+}
+
+.date {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  border: 1px solid #141414;
+  border-radius: 1px;
+  background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 780px) {

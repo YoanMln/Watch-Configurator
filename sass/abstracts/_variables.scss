@@ -34,6 +34,9 @@ $border-button: 1px solid black;
 $radius-button: 10px;
 $radius-config: 15px;
 $color-choice-radius: 50%;
+$radius-moon: 100%;
+$border-moon: 1px solid #ccc;
+$radius-date: 1px;
 
 // HEIGHT //
 
@@ -48,6 +51,7 @@ $height-minute: 3.75em;
 $height-seconds: 4.37em;
 $height-configurator: 60rem;
 $height-config: 75px;
+$height-moon: 50px;
 
 // WIDTH //
 
@@ -61,6 +65,7 @@ $width-minute: 0.31em;
 $width-seconds: 0.18em;
 $width-configurator: 50vh;
 $width-config: 70%;
+$width-moon: 50px;
 
 // LEFT //
 
@@ -70,14 +75,16 @@ $left-watch: 50%;
 $left-crown: calc(50% + 6.56em);
 $left-hand: 0;
 $left-douze: 5em;
-$left-trois: 10em;
+$left-trois: 10.5em;
 $left-six: 0.5em;
 $left-neuf: 5.4em;
+$left-moon: 50%;
 
 // RIGHT //
 
 $right-hand: 0;
 $right-strap-after: 60%;
+$right-date: 20px;
 
 // TOP //
 $top-strap: 50%;
@@ -89,7 +96,9 @@ $top-seconds: 1.25em;
 $top-douze: 0.5em;
 $top-trois: 5.1em;
 $top-six: 5.1em;
-$top-neuf: 9.5em;
+$top-neuf: 10em;
+$top-date: 80px;
+$top-moon: 72%;
 
 // MARGIN //
 
@@ -119,6 +128,8 @@ $position-douze: absolute;
 $position-trois: absolute;
 $position-six: absolute;
 $position-neuf: absolute;
+$position-date: absolute;
+$position-moon: absolute;
 $position-configurator: relative;
 $position-configurator-before: absolute;
 $position-configurator-after: absolute;
@@ -175,7 +186,6 @@ $height-mobile-btn-config: 40px;
 $height-mobile-strap: 40vh;
 $height-mobile-strap-before: 40vh;
 $height-mobile-strap-after: 40vh;
-
 
 // MOBILE COLORS //
 $background-mobile-configurator: #aeb0b0;
