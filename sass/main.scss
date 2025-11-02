@@ -13,16 +13,16 @@
 
 // PAGES //
 
-@import "pages/index";
-@import "pages/hands";
-@import "pages/configurator";
-@import "pages/crown";
-@import "pages/strap";
-@import "pages/watch";
-@import "pages/moon-phase";
-@import "pages/stars";
-@import "pages/color-picker";
-@import "pages/date.scss";
+@import "components/index";
+@import "components/hands";
+@import "components/configurator";
+@import "components/crown";
+@import "components/strap";
+@import "components/watch";
+@import "components/moon-phase";
+@import "components/stars";
+@import "components/color-picker";
+@import "components/date.scss";
 
 // UTILITIES //
 @import "utilities/responsive";

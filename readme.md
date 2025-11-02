@@ -36,15 +36,33 @@ Watch-Configurator/
 ├── readme.md               # Documentation
 ├── assets/
 │   └── css/
-│       ├── style.css     # CSS compilé
-│       └── style.css.map # Source map
-├── sass/                 # Fichiers SASS sources
-│   ├── main.scss          # Fichier principal
-│   ├── abstracts/         #Variables et mixins
-│   ├── base/              # Styles de base
-│   ├── layout/            # Styles de mise en page
-│   ├── pages/             # Styles spécifiques aux composants
-│   └── utilities/         # Utilitaires et responsive
+│       ├── style.css       # CSS compilé
+│       └── style.css.map   # Source map
+├── sass/                   # Fichiers SASS sources
+│   ├── main.scss           # Fichier principal
+│   ├── abstracts/          # Variables et mixins
+│   │   ├── _mixins.scss
+│   │   └── _variables.scss
+│   ├── base/               # Styles de base
+│   │   ├── _base.scss
+│   │   ├── _button.scss
+│   │   ├── _forms.scss
+│   │   ├── _reset.scss
+│   │   └── _typography.scss
+│   ├── components/         # Styles des composants
+│   │   ├── _color-picker.scss
+│   │   ├── _configurator.scss
+│   │   ├── _crown.scss
+│   │   ├── _date.scss
+│   │   ├── _hands.scss
+│   │   ├── _index.scss
+│   │   ├── _moon-phase.scss
+│   │   ├── _stars.scss
+│   │   ├── _strap.scss
+│   │   └── _watch.scss
+│   ├── layout/             # Styles de mise en page
+│   └── utilities/          # Utilitaires et responsive
+│       └── _responsive.scss
 └── script/                 # Scripts JavaScript
     ├── configurator.js     # Logique de personnalisation
     ├── date.js             # Gestion de la date
@@ -86,7 +104,7 @@ Le projet utilise une architecture SASS organisée selon la méthodologie 7-1 :
 - **abstracts/** : Variables, mixins, fonctions
 - **base/** : Reset, typographie, styles de base
 - **layout/** : Structures de mise en page
-- **pages/** : Styles spécifiques aux composants
+- **components/** : Styles spécifiques aux composants
 - **utilities/** : Classes utilitaires et responsive
 
 ## 📱 Responsive Design
