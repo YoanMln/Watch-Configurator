@@ -23,6 +23,7 @@ Un configurateur de montre interactif et moderne développé en HTML, CSS (SASS)
 
 - **Horloge en temps réel** : Affichage de l'heure actuelle avec mise à jour automatique
 - **Phase de lune** : Affichage décoratif avec étoiles animées
+- **Affichage jours/mois** : Affichage du jour et du mois avec mise à jour automatique
 - **Couleurs aléatoires** : Génération automatique de combinaisons de couleurs
 - **Interface responsive** : Adaptation à tous les écrans
 
@@ -32,23 +33,24 @@ Un configurateur de montre interactif et moderne développé en HTML, CSS (SASS)
 Watch-Configurator/
 ├── index.html              # Page principale
 ├── package.json            # Configuration npm
-├── readme.md              # Documentation
+├── readme.md               # Documentation
 ├── assets/
 │   └── css/
-│       ├── style.css      # CSS compilé
-│       └── style.css.map  # Source map
-├── sass/                  # Fichiers SASS sources
-│   ├── main.scss         # Fichier principal
-│   ├── abstracts/        # Variables et mixins
-│   ├── base/            # Styles de base
-│   ├── layout/          # Styles de mise en page
-│   ├── pages/           # Styles spécifiques aux composants
-│   └── utilities/       # Utilitaires et responsive
-└── script/              # Scripts JavaScript
-    ├── configurator.js  # Logique de personnalisation
-    ├── hours.js        # Gestion de l'horloge
-    ├── moonphase.js    # Animation phase de lune
-    └── stars.js        # Animation des étoiles
+│       ├── style.css     # CSS compilé
+│       └── style.css.map # Source map
+├── sass/                 # Fichiers SASS sources
+│   ├── main.scss          # Fichier principal
+│   ├── abstracts/         #Variables et mixins
+│   ├── base/              # Styles de base
+│   ├── layout/            # Styles de mise en page
+│   ├── pages/             # Styles spécifiques aux composants
+│   └── utilities/         # Utilitaires et responsive
+└── script/                 # Scripts JavaScript
+    ├── configurator.js     # Logique de personnalisation
+    ├── date.js             # Gestion de la date
+    ├── hours.js            # Gestion de l'horloge
+    ├── moonphase.js        # Animation phase de lune
+    └── stars.js            # Animation des étoiles
 ```
 
 ## 🎯 Utilisation
