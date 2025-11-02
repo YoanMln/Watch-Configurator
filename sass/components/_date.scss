@@ -2,7 +2,8 @@
   position: $position-date;
   right: $right-date;
   top: $top-date;
-  border: 1px solid $black-details;
+  border: 1px solid #999999dd;
   border-radius: $radius-date;
-  background-color: $white-details;
+  background-color: $black-details;
+  color: $white-details;
 }
